@@ -11,7 +11,7 @@ def sort_bubble(list: list):
     return a
 
 
-b = sort_bubble(origin)
+sorted = sort_bubble(origin)
 
 print(origin)
-print(b)
+print(sorted)
