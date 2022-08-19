@@ -22,13 +22,13 @@ def run_sorting_algorithm(algorithm, array):
 ARRAY_LENGTH = 1000
 
 if __name__ == "__main__":
-    # Generate an array of `ARRAY_LENGTH` items consisting
-    # of random integer values between 0 and 999
+    # # Generate an array of `ARRAY_LENGTH` items consisting
+    # # of random integer values between 0 and 999
     array = [randint(0, 1000) for i in range(ARRAY_LENGTH)]
     run_sorting_algorithm(algorithm="sorted", array=array)
 
-    # Call the function using the name of the sorting algorithm
-    # and the array you just created
+    # # Call the function using the name of the sorting algorithm
+    # # and the array you just created
     array = [randint(0, 1000) for i in range(ARRAY_LENGTH)]
     run_sorting_algorithm(algorithm="bubble_sort", array=array)
 
@@ -49,3 +49,14 @@ if __name__ == "__main__":
 
     array = [randint(0, 1000) for i in range(ARRAY_LENGTH)]
     run_sorting_algorithm(algorithm="tim_sort", array=array)
+
+    # # Timing for already sorted array
+
+    # # Generate a sorted array of ARRAY_LENGTH items
+    # array = [i for i in range(ARRAY_LENGTH)]
+
+    # # Call each of the functions
+    # run_sorting_algorithm(algorithm="insertion_sort", array=array)
+    # run_sorting_algorithm(algorithm="merge_sort", array=array)
+    # # run_sorting_algorithm(algorithm="quick_sort", array=array)
+    # run_sorting_algorithm(algorithm="tim_sort", array=array)

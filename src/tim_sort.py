@@ -1,4 +1,4 @@
-from merge_sort import merge
+# from merge_sort import merge
 
 
 # origin = [5, 7, 2, 9, 33, 12, 1, 4, 22, 1, 4, 1]
@@ -60,9 +60,11 @@ def tim_sort(array):
             # The `left` array should go from `start` to
             # `midpoint + 1`, while the `right` array should
             # go from `midpoint + 1` to `end + 1`.
-            merged_array = merge(
-                left=array[start : midpoint + 1], right=array[midpoint + 1 : end + 1]
-            )
+            # merged_array = merge(
+            #     left=array[start : midpoint + 1], right=array[midpoint + 1 : end + 1]
+            # )
+
+            merged_array = array[start : midpoint + 1] + array[midpoint + 1 : end + 1]
 
             # Finally, put the merged array back into
             # your array
