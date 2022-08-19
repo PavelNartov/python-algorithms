@@ -40,3 +40,6 @@ if __name__ == "__main__":
 
     array = [randint(0, 1000) for i in range(ARRAY_LENGTH)]
     run_sorting_algorithm(algorithm="merge_sort", array=array)
+
+    array = [randint(0, 1000) for i in range(ARRAY_LENGTH)]
+    run_sorting_algorithm(algorithm="quick_sort", array=array)
