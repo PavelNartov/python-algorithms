@@ -1,4 +1,4 @@
-origin = [5, 7, 2, 9, 33, 12, 1, 4, 22, 1, 4, 1]
+# origin = [5, 7, 2, 9, 33, 12, 1, 4, 22, 1, 4, 1]
 
 
 def counting_sort(array):
@@ -35,7 +35,7 @@ def counting_sort(array):
     return output
 
 
-sorted = counting_sort(origin)
+# sorted = counting_sort(origin)
 
-print(origin)
-print(sorted)
+# print(origin)
+# print(sorted)
