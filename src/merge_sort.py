@@ -1,4 +1,4 @@
-origin = [5, 7, 2, 9, 33, 12, 1, 4, 22, 1, 4, 1]
+# origin = [5, 7, 2, 9, 33, 12, 1, 4, 22, 1, 4, 1]
 
 
 def merge(left: list, right: list) -> list:
@@ -42,7 +42,7 @@ def merge(left: list, right: list) -> list:
     return result
 
 
-def sort_merge(a: list):
+def merge_sort(a: list):
     # a = list.copy()
     length = len(a)
 
@@ -52,15 +52,15 @@ def sort_merge(a: list):
 
     midpoint = length // 2
 
-    left = sort_merge(a[:midpoint])
-    right = sort_merge(a[midpoint:])
+    left = merge_sort(a[:midpoint])
+    right = merge_sort(a[midpoint:])
 
     # print("LR", length, midpoint, left, right)
 
     return merge(left, right)
 
 
-sorted = sort_merge(origin)
+# sorted = merge_sort(origin)
 
-print(origin)
-print(sorted)
+# print(origin)
+# print(sorted)

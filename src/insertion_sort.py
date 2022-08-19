@@ -1,7 +1,7 @@
-origin = [5, 7, 2, 9, 33, 12, 1, 4, 22, 1, 4, 1]
+# origin = [5, 7, 2, 9, 33, 12, 1, 4, 22, 1, 4, 1]
 
 
-def sort_insertion(list: list):
+def insertion_sort(list: list):
     a = list.copy()
     length = len(a)
     for step in range(1, length):
@@ -18,7 +18,7 @@ def sort_insertion(list: list):
     return a
 
 
-sorted = sort_insertion(origin)
+# sorted = insertion_sort(origin)
 
-print(origin)
-print(sorted)
+# print(origin)
+# print(sorted)

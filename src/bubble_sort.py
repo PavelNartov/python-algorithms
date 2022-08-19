@@ -1,7 +1,7 @@
-origin = [5, 7, 2, 9, 33, 12, 1, 4, 22, 1, 4, 1]
+# origin = [5, 7, 2, 9, 33, 12, 1, 4, 22, 1, 4, 1]
 
 
-def sort_bubble(list: list):
+def bubble_sort(list: list):
     a = list.copy()
     length = len(a)
     for j in range(length):
@@ -11,7 +11,7 @@ def sort_bubble(list: list):
     return a
 
 
-sorted = sort_bubble(origin)
+# sorted = bubble_sort(origin)
 
-print(origin)
-print(sorted)
+# print(origin)
+# print(sorted)
